@@ -1,17 +1,15 @@
 import React from "react";
 import { Route } from 'react-router-dom';
 
-import Header from './Header'
-import HomePage from './HomePage'
-import Form from './Form'
+import Header from './components/Header'
+import HomePage from './components/HomePage'
+import Form from './components/Form'
 
 const App = () => {
   return (
     <div>
       <Route exact path='/'>
-        <Header/>    
-          <h1>Lambda Eats</h1>
-          <p>You can remove this code and create your own header</p>
+        <Header/>  
         <HomePage/>
       </Route>
       <Route path ='/pizza'>
